@@ -66,9 +66,14 @@ def convert_image_to_pdf(uploaded_file):
     pdf_buffer.seek(0)
     return pdf_buffer
 
+def health_check():
+    return {"status": "healthy"}
+
 def main():
     st.title("Image to PDF Converter")
     st.write("Upload an image to convert it to PDF")
+    if st.sidebar.button('Health Check'):
+    st.json(health_check())
     
     # Add a container for error messages
     error_container = st.empty()
