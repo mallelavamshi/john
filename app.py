@@ -73,7 +73,7 @@ def main():
     st.title("Image to PDF Converter")
     st.write("Upload an image to convert it to PDF")
     if st.sidebar.button('Health Check'):
-    st.json(health_check())
+        st.json(health_check())
     
     # Add a container for error messages
     error_container = st.empty()
