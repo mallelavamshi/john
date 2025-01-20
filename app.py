@@ -104,9 +104,7 @@ def main():
             error_container.error(f"An error occurred: {str(e)}")
 #test change
 # Add this route to your app.py
-@app.route('/health')
-def health_check():
-    return {'status': 'healthy'}, 200
+
 #comments added now
 if __name__ == '__main__':
     main()
