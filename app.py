@@ -70,7 +70,7 @@ def health_check():
     return {"status": "healthy"}
 
 def main():
-    st.title("Image to PDF Converter")
+    st.title("Vamshi's PDF Converter")
     st.write("Upload an image to convert it to PDF")
     if st.sidebar.button('Health Check'):
         st.json(health_check())
